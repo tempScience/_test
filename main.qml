@@ -1,12 +1,12 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import Analysis 1.0 as EIAnalysis
+import App 1.0 as EIApp
 
 ApplicationWindow {
     id: window
 
-    EIAnalysis.Page {
+    EIApp.Page {
         id: page
     }
 

@@ -1,8 +1,8 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import Controls 1.0 as EIControls
-import Style 1.0 as EIStyle
+import Components.Controls 1.0 as EIControls
+import Components.Style 1.0 as EIStyle
 
 Rectangle {
     anchors.fill: parent
