@@ -1,0 +1,22 @@
+name: Create Test
+
+on:
+  create
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout submodules
+      uses: srt32/git-actions@v0.0.3
+      with:
+        args: git submodule update --init --recursive
+    - name: push
+      uses: github-actions-x/commit@v2.6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: master
+        commit-message: '${{ matrix.node-version }} adds submodules'
+        rebase: 'true' # pull abd rebase before commit
