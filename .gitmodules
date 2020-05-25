@@ -1,0 +1,6 @@
+[submodule "components"]
+	path = components
+	url = https://github.com/tempScience/components.git
+[submodule "branding"]
+	path = branding
+	url = https://github.com/tempScience/branding.git
