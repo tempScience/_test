@@ -17,5 +17,5 @@ Project {
     }
 
     /* List of module and plugin directories passed to QML runtime */
-    importPaths: ["."]
+    importPaths: [".", "./components"]
 }
